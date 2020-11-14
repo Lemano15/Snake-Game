@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vanilla JS Snake Game</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <section id="welcomeScreen">
+            <h1 class="titleText">Welcome to Snake!</h1>
+            <h2>By Luke Emano</h2>
+            <button id="startBtn">Start</button>
+            <button id="instructionsBtn">Instructions</button>
+        </section>
+        
+        <section id="instructionsScreen">
+            <h1 class="titleText">How to Play</h1>
+            <p>The player controls a square on a bordered plane and as it moves forward, it leaves a trail behind. There are
+                'apples' randomly spread around the plane, and the goal is to use the keypad to move the snake towards those apples.
+            </p>
+            <p>
+                Over time, the snake continually gets longer as it collects more apples. The goal of the game is to make the snake as long
+                as possible without running into itself or the borders. 
+            </p>
+            <button id="backBtn">Back</button>
+        </section>
+
+        <section id="gamePage">
+            <h1 class="titleText">Snake</h1>
+                
+            <div id="snakeArea">
+                <div id="gameOverScreen">
+                    <h2>Game Over!</h2>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gameInfo">
+            <h2>Score: <span id="scoreDisplay">0</span></h2>
+        </section>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
