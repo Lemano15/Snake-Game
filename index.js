@@ -39,7 +39,7 @@ startBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
     gamePage.style.display = 'none'
     document.getElementById('gameInfo').style.display = 'none'
-    welcomeScreen.style.display = 'block'
+    welcomeScreen.style.display = 'flex'
     endScreen.style.display = 'none'
     resetGame()
 })

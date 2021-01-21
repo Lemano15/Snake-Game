@@ -13,7 +13,6 @@ body {
 }
 
 button {
-    cursor: pointer;
     background-color: green;
     border: 3px solid black;
     padding: 2%;
@@ -21,6 +20,9 @@ button {
     font-size: 1rem;
 }
 
+button:hover {
+    cursor: pointer;
+}
 
 #welcomeScreen {
     background-color: green;
@@ -37,6 +39,12 @@ button {
     font-size: 3rem;
     margin: 0;
     padding: 0;
+}
+
+.btnContainer {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
 }
 
 #instructionsScreen {
