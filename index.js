@@ -5,6 +5,7 @@ let instructionsScreen = document.getElementById('instructionsScreen')
 let backBtn = document.getElementById('backBtn')
 let startBtn = document.getElementById('startBtn')
 let gamePage = document.getElementById('gamePage')
+let gameInfo = document.getElementById('gameInfo')
 let resetBtn = document.getElementById('reset')
 let scoreDisplay = document.getElementById('scoreDisplay')
 let endScreen = document.getElementById('gameOverScreen')
@@ -20,18 +21,18 @@ let timerId = 0;
 
 instructionsBtn.addEventListener('click', () => {
     welcomeScreen.style.display = 'none';
-instructionsScreen.style.display = 'block';
+instructionsScreen.style.display = 'flex';
 })
 
 backBtn.addEventListener('click', () => {
     instructionsScreen.style.display = 'none'
-    welcomeScreen.style.display = 'block'
+    welcomeScreen.style.display = 'flex'
 })
 
 startBtn.addEventListener('click', () => {
     welcomeScreen.style.display = 'none';
-    document.getElementById('gameInfo').style.display = 'flex'
-    gamePage.style.display = 'block';
+    gamePage.style.display = 'flex';
+    gameInfo.style.display = 'flex';
     startGame()
 })
 
@@ -91,7 +92,6 @@ function resetGame() {
             (grid[currentSnake[0] + direction].classList.contains('snake'))) {
                 endScreen.style.display = 'block';
                 snakeArea.style.backgroundColor = 'rgb(0, 128, 0, .5)'
-
                 return clearInterval(timerId);
             }
             
